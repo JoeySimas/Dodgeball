@@ -9,13 +9,12 @@ public class PlayerSpawn : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Instantiate (player, transform.position, transform.rotation); 
-		GameObject.FindGameObjectWithTag ("Player");
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(GameObject.FindGameObjectWithTag("Player")==null){
-			Instantiate (player, transform.position, transform.rotation); 
-		}
+		// if(GameObject.FindGameObjectWithTag("Player")==null){
+		// 	Instantiate (player, transform.position, transform.rotation); 
+		// }
 	}
 }
